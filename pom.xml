@@ -55,6 +55,11 @@
 		</dependency>
 		<dependency>
 			<groupId>de.tinycodecrank</groupId>
+			<artifactId>tiny_monads</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>de.tinycodecrank</groupId>
 			<artifactId>bounded_values</artifactId>
 			<version>1.0.0</version>
 		</dependency>
