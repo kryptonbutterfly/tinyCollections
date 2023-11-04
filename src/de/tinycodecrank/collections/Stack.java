@@ -1,9 +1,11 @@
 package de.tinycodecrank.collections;
 
-import static de.tinycodecrank.math.utils.range.Range.range;
+import static de.tinycodecrank.math.utils.range.Range.*;
 
 import java.util.Collection;
 import java.util.Iterator;
+
+import de.tinycodecrank.math.utils.limit.LimitInt;
 
 public class Stack<E> implements Iterable<E>, Cloneable
 {
@@ -125,6 +127,7 @@ public class Stack<E> implements Iterable<E>, Cloneable
 	 */
 	public E get(int index)
 	{
+		LimitInt.assertLimit(0, index, size - 1, "index");
 		return this.stackArray[index];
 	}
 	
