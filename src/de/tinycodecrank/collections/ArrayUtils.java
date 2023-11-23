@@ -481,7 +481,7 @@ public class ArrayUtils
 		int count = 0;
 		for (final int i : range(target.length))
 		{
-			if (element.equals(target[i]))
+			if (Objects.deepEquals(element, target[i]))
 			{
 				count++;
 			}
@@ -494,7 +494,7 @@ public class ArrayUtils
 		count = 0;
 		for (final int i : range(target.length))
 		{
-			if (element.equals(target[i]))
+			if (Objects.deepEquals(element, target[i]))
 			{
 				indices[count++] = i;
 				if (count == indices.length)
@@ -518,7 +518,7 @@ public class ArrayUtils
 	{
 		for (IndexElement<T> iElement : ArrayRange.range(target))
 		{
-			if (iElement.element().equals(element))
+			if (Objects.deepEquals(iElement.element(), element))
 			{
 				return iElement.index();
 			}
