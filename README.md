@@ -11,14 +11,25 @@ data.Tuple       | a type containing 2 elements
 data.Triple      | a type containing 3 elements
 data.Quad        | a type containing 4 elements
 
+## Getting the latest release
+
+```xml
+<repository>
+  <id>github</id>
+  <url>https://maven.pkg.github.com/tinycodecrank/maven-repo</url>
+</repository>
+```
+
+```xml
+<dependency>
+  <groupId>de.tinycodecrank</groupId>
+  <artifactId>tiny_collections</artifactId>
+  <version>1.0.0</version>
+</dependency>
+```
+
 ## Download
 java version | library version | Download
 :----------: | :-------------: | :-------
 18+          | 1.0.0           | [**tinyCollections.jar**](https://github.com/tinycodecrank/tinyCollections/releases/download/v1.0.0/tinyCollections.jar)
 
-## Dependencies
-* [**Monads.jar**](https://github.com/tinycodecrank/tinyMonads/releases/download/v1.0.0/Monads.jar)
-* [**tinyIterators.jar**](https://github.com/tinycodecrank/tinyIterators/releases/download/v1.0.0/tinyIterators.jar)
-* [**BetterFunctionals.jar**](https://github.com/tinycodecrank/betterFunctionals/releases/download/v1.0.0/BetterFunctionals.jar)
-* [**MathUtils.jar**](https://github.com/tinycodecrank/mathUtils/releases/download/v1.0.0/MathUtils.jar)
-* [**BoundedValues.jar**](https://github.com/tinycodecrank/BoundedValues/releases/download/v1.0.0/BoundedValues.jar)
