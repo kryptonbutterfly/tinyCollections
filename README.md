@@ -24,7 +24,7 @@ data.Quad        | a type containing 4 elements
 <dependency>
   <groupId>de.tinycodecrank</groupId>
   <artifactId>tiny_collections</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
 </dependency>
 ```
 
