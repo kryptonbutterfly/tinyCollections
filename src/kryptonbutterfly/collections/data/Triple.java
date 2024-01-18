@@ -1,4 +1,4 @@
-package de.tinycodecrank.collections.data;
+package kryptonbutterfly.collections.data;
 
 /**
  * Creates an immutable Triple containing three references.

@@ -1,10 +1,10 @@
-module de.tinycodecrank.Collections
+module kryptonbutterfly.Collections
 {
-	exports de.tinycodecrank.collections;
-	exports de.tinycodecrank.collections.data;
-	exports de.tinycodecrank.collections.range;
+	exports kryptonbutterfly.collections;
+	exports kryptonbutterfly.collections.data;
+	exports kryptonbutterfly.collections.range;
 	
-	requires transitive de.tinycodecrank.Monads;
-	requires de.tinycodecrank.mathUtils;
-	requires transitive de.tinycodecrank.bounded;
+	requires transitive kryptonbutterfly.Monads;
+	requires kryptonbutterfly.mathUtils;
+	requires transitive kryptonbutterfly.bounded;
 }

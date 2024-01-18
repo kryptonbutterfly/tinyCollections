@@ -1,12 +1,12 @@
-package de.tinycodecrank.collections;
+package kryptonbutterfly.collections;
 
 import java.util.Arrays;
 import java.util.function.Consumer;
 
-import de.tinycodecrank.bounded.presets._int.int_not_negative;
-import de.tinycodecrank.math.utils.limit.LimitInt;
-import de.tinycodecrank.math.utils.limit.OutOfBoundsException;
-import de.tinycodecrank.monads.opt.Opt;
+import kryptonbutterfly.bounded.presets._int.int_not_negative;
+import kryptonbutterfly.math.utils.limit.LimitInt;
+import kryptonbutterfly.math.utils.limit.OutOfBoundsException;
+import kryptonbutterfly.monads.opt.Opt;
 
 public class CyclicBuffer<T>
 {

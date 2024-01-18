@@ -1,4 +1,4 @@
-package de.tinycodecrank.collections.data;
+package kryptonbutterfly.collections.data;
 
 public record Quad<U, V, W, X> (U first, V second, W third, X fourth)
 {

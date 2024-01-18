@@ -16,7 +16,7 @@ data.Quad        | a type containing 4 elements
 ```xml
 <repository>
   <id>github</id>
-  <url>https://maven.pkg.github.com/tinycodecrank/maven-repo</url>
+  <url>https://maven.pkg.github.com/kryptonbutterfly/maven-repo</url>
 </repository>
 ```
 
@@ -31,5 +31,5 @@ data.Quad        | a type containing 4 elements
 ## Download
 java version | library version | Download
 :----------: | :-------------: | :-------
-18+          | 1.0.0           | [**tinyCollections.jar**](https://github.com/tinycodecrank/tinyCollections/releases/download/v1.0.0/tinyCollections.jar)
+18+          | 1.0.0           | [**tinyCollections.jar**](https://github.com/kryptonbutterfly/tinyCollections/releases/download/v1.0.0/tinyCollections.jar)
 

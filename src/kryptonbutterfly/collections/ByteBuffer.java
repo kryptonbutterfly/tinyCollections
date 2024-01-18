@@ -1,8 +1,8 @@
-package de.tinycodecrank.collections;
+package kryptonbutterfly.collections;
 
 import java.util.Arrays;
 
-import de.tinycodecrank.math.utils.limit.LimitInt;
+import kryptonbutterfly.math.utils.limit.LimitInt;
 
 public class ByteBuffer
 {

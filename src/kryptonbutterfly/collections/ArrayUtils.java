@@ -1,12 +1,12 @@
-package de.tinycodecrank.collections;
+package kryptonbutterfly.collections;
 
-import static de.tinycodecrank.math.utils.range.Range.*;
+import static kryptonbutterfly.math.utils.range.Range.*;
 
 import java.util.Arrays;
 import java.util.Objects;
 
-import de.tinycodecrank.math.utils.range.ArrayRange;
-import de.tinycodecrank.math.utils.range.IndexElement;
+import kryptonbutterfly.math.utils.range.ArrayRange;
+import kryptonbutterfly.math.utils.range.IndexElement;
 
 public class ArrayUtils
 {

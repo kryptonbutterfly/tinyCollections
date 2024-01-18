@@ -1,4 +1,4 @@
-package de.tinycodecrank.collections;
+package kryptonbutterfly.collections;
 
 import java.util.Arrays;
 

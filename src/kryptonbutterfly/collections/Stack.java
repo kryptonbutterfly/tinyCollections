@@ -1,11 +1,11 @@
-package de.tinycodecrank.collections;
+package kryptonbutterfly.collections;
 
-import static de.tinycodecrank.math.utils.range.Range.*;
+import static kryptonbutterfly.math.utils.range.Range.*;
 
 import java.util.Collection;
 import java.util.Iterator;
 
-import de.tinycodecrank.math.utils.limit.LimitInt;
+import kryptonbutterfly.math.utils.limit.LimitInt;
 
 public class Stack<E> implements Iterable<E>, Cloneable
 {

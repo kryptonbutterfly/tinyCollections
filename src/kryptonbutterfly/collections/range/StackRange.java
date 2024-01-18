@@ -1,14 +1,14 @@
-package de.tinycodecrank.collections.range;
+package kryptonbutterfly.collections.range;
 
 import java.util.Iterator;
 import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 
-import de.tinycodecrank.collections.Stack;
-import de.tinycodecrank.math.utils.limit.LimitInt;
-import de.tinycodecrank.math.utils.range.IRange;
-import de.tinycodecrank.math.utils.range.IndexElement;
-import de.tinycodecrank.math.utils.range.Range;
+import kryptonbutterfly.collections.Stack;
+import kryptonbutterfly.math.utils.limit.LimitInt;
+import kryptonbutterfly.math.utils.range.IRange;
+import kryptonbutterfly.math.utils.range.IndexElement;
+import kryptonbutterfly.math.utils.range.Range;
 
 public class StackRange
 {
