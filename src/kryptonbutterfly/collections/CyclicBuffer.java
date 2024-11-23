@@ -1,6 +1,7 @@
 package kryptonbutterfly.collections;
 
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.function.Consumer;
 
 import kryptonbutterfly.bounded.presets._int.int_not_negative;
@@ -8,7 +9,7 @@ import kryptonbutterfly.math.utils.limit.LimitInt;
 import kryptonbutterfly.math.utils.limit.OutOfBoundsException;
 import kryptonbutterfly.monads.opt.Opt;
 
-public class CyclicBuffer<T>
+public class CyclicBuffer<T> implements Iterable<T>
 {
 	private final Consumer<T>	evictionListener;
 	private final T[]			content;
@@ -21,8 +22,7 @@ public class CyclicBuffer<T>
 	 */
 	public CyclicBuffer(int_not_negative size)
 	{
-		this(size, e ->
-		{});
+		this(size, e -> {});
 	}
 	
 	/**
@@ -109,6 +109,30 @@ public class CyclicBuffer<T>
 	{
 		LimitInt.assertLimit(0, index, occupancy - 1, "index");
 		return content[(start + index) % content.length];
+	}
+	
+	/**
+	 * Removes all entities after and including the given {@code index}.
+	 * 
+	 * @param index
+	 */
+	public void removeFrom(int index)
+	{
+		index++;
+		while (index < occupancy)
+			removeLast();
+	}
+	
+	/**
+	 * If present removes the last element in the buffer.
+	 */
+	public void removeLast()
+	{
+		if (occupancy == 0)
+			return;
+		occupancy--;
+		final int index = (start + occupancy) % content.length;
+		content[index] = null;
 	}
 	
 	/**
@@ -234,5 +258,26 @@ public class CyclicBuffer<T>
 		Arrays.fill(content, null);
 		start		= 0;
 		occupancy	= 0;
+	}
+	
+	@Override
+	public Iterator<T> iterator()
+	{
+		return new Iterator<>()
+		{
+			public int index = 0;
+			
+			@Override
+			public boolean hasNext()
+			{
+				return index < size();
+			}
+			
+			@Override
+			public T next()
+			{
+				return get(index++);
+			}
+		};
 	}
 }
