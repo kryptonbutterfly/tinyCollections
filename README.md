@@ -24,13 +24,14 @@ data.Quad        | a type containing 4 elements
 <dependency>
   <groupId>kryptonbutterfly</groupId>
   <artifactId>tiny_collections</artifactId>
-  <version>2.0.0</version>
+  <version>2.1.0</version>
 </dependency>
 ```
 
 ## Download
 java version | library version | Download
 :----------: | :-------------: | :-------
+18+          | 2.1.0           | [**tiny_collections-2.1.0.jar**](https://github.com/kryptonbutterfly/tinyCollections/releases/download/v2.1.0/tiny_collections-2.1.0.jar)
 18+          | 2.0.0           | [**tiny_collections-2.0.0.jar**](https://github-registry-files.githubusercontent.com/731108692/8be32200-b663-11ee-9c57-414ec1d0ce71?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240118%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240118T234225Z&X-Amz-Expires=300&X-Amz-Signature=7c480e63b153177df7146bb6551240ba3ae255c6781d2de98063b0c525b5018c&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=731108692&response-content-disposition=filename%3Dtiny_collections-2.0.0.jar&response-content-type=application%2Foctet-stream)
 18+          | 1.0.0           | [**tinyCollections.jar**](https://github.com/kryptonbutterfly/tinyCollections/releases/download/v1.0.0/tinyCollections.jar)
 
